@@ -1,0 +1,22 @@
+{
+	"name": "pike-theme",
+	"displayName": "pike theme",
+	"description": "",
+	"publisher": "pikebigdevil",
+	"version": "0.2.0",
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Pike Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Pike Theme-color-theme.json"
+			}
+		]
+	}
+}
