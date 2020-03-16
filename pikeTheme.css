@@ -1,0 +1,36 @@
+.mtk7 {
+	color: #f4eee4;
+	text-shadow: 0 0 2px #393a33, 0 0 3px #f39f0575, 0 0 5px #f39f0575, 0 0 8px #f39f0575;
+}
+
+.mtk10 {
+	color: #ffcb82;
+	text-shadow: 0 0 2px #001716, 0 0 3px #ffffff75, 0 0 5px #ffffff75, 0 0 8px #ffffff75;
+}
+
+.mtk12 {
+	color: #fdfdfd;
+	text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+}
+
+.monaco-editor .line-numbers {
+	color: white;
+}
+
+.monaco-workbench
+	.part.editor
+	> .content
+	.editor-group-container
+	> .title
+	.tabs-container
+	> .tab.sizing-fit.active::after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(to right, #fc2828, #03f972) !important;
+	opacity: 1;
+	z-index: 999;
+}
