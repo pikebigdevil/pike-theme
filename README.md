@@ -1,17 +1,20 @@
-## pike主题效果展示
+## pike主题
 
-### 普通主题
+### 安装
 
-![pike 普通主题](./pikeOne.png)
+从 [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=pikebigdevil.pike-theme) 安装主题
 
-### 发光的主题
+#### 效果展示
 
-![pike 发光主题](./pikeTwo.png)
-如果你想弄成这种花哨(发光)的效果：首先你得安装一个[Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)插件(这个插件允许你修改vscode内部样式)，使用项目中的pike-theme.css替换css文件即可
+JavaScript (效果图使用了字体[Fira Code](https://github.com/tonsky/FiraCode))
 
-### 带连字符的主题
+![js效果展示](./pike_js.png)
 
-![pike 连字符主题](./pikeThree.png)
+HTML
 
-我个人是比较喜欢连字符 [Fira Code](https://github.com/tonsky/FiraCode)，
+![html效果展示](./pike_html.png)
+
+CSS
+
+![css效果展示](./pike_css.png)
 

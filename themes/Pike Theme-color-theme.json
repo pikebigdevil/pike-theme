@@ -2,17 +2,17 @@
 	"name": "Pike Theme",
 	"type": "dark",
 	"colors": {
-		// 活动栏开始
-		"activityBar.background": "#3a3b3ae1",
+		// 活动栏
+		"activityBar.background": "#2d2e30",
 		"activityBar.foreground": "#e0dfdf",
-		"activityBarBadge.background": "#cc7c4d",
+		"activityBarBadge.background": "#19b64dd3",
 		"activityBarBadge.foreground": "#f8fafd",
-		// 活动栏结束
+		
 		"badge.background": "#737579", // 小型信息框, 如git提交
-		"button.background": "#636568", // 按钮背景色
+		"button.background": "#2f70d1", // 按钮背景色
 		"debugToolBar.background": "#363638", // 调试工具栏背景色
 		"diffEditor.insertedTextBackground": "#00809b33", // 已插入的文本的背景色 
-		"dropdown.background": "#53504f", // 下拉列表背景色
+		"dropdown.background": "#424242", // 下拉列表背景色
 		"dropdown.border": "#21252b", // / 下拉列表边框
 		"editor.background": "#2d2e30", // 背景色
 		"editor.findMatchBackground": "#7e630b2f", // 当前搜索匹配项的颜色
@@ -63,13 +63,9 @@
 		"peekViewEditor.background": "#5c5d5e",
 		"peekViewEditor.matchHighlightBackground": "#757577",
 		"peekViewResult.background": "#63676b",
-		// "scrollbarSlider.activeBackground": "#747d9180",
-		// "scrollbarSlider.background": "#4e566660",
-		// "scrollbarSlider.hoverBackground": "#5a637580",
 		// 侧边栏
-		"sideBar.background": "#413f3f",
+		"sideBar.background": "#353535",
 		"sideBarSectionHeader.background": "#505050",
-		// 侧边栏
 
 		// 状态栏
 		"statusBar.background": "#504f4f", // 工作区打开时状态栏的背景色
@@ -82,10 +78,10 @@
 		"statusBarItem.remoteBackground": "#4d78cc",
 		"statusBarItem.remoteForeground": "#f8fafd",
 		// 选项卡
-		"tab.activeBackground": "#1e1e1e",
+		"tab.activeBackground": "#222222",
 		"tab.activeForeground": "#dcdcdc",
-		"tab.border": "#252525", // 选项卡边框
-		"tab.hoverBackground": "#1e1e1e",
+		"tab.border": "#333333", // 选项卡边框
+		"tab.hoverBackground": "#222222",
 		"tab.inactiveBackground": "#2d2d2d", // 非活动选项卡的背景色。在编辑器区域，选项卡是编辑器的容器。可在一个编辑器组中打开多个选项卡
 		"tab.unfocusedHoverBackground": "#2a2d33", // 非焦点组选项卡被悬停时的背景色。选项卡是编辑器区域中编辑器的容器。可在一个编辑器组中打开多个选项卡
 		// 终端
@@ -106,13 +102,12 @@
 		"terminal.ansiWhite": "#d7dae0",
 		"terminal.ansiYellow": "#e5c07b",
 		"terminal.foreground": "#c8c8c8",
-		// 终端
 
 		"textLink.foreground": "#61afef",
 		// 窗口
-		"titleBar.activeBackground": "#6e6e6e",
+		"titleBar.activeBackground": "#404041",
 		"titleBar.activeForeground": "#ffffff",
-		"titleBar.inactiveBackground": "#6e6e6e",
+		"titleBar.inactiveBackground": "#404041",
 		"titleBar.inactiveForeground": "#ffffff",
 	},
 	"tokenColors": [
@@ -160,31 +155,20 @@
 			"name": "Keyword, Storage",
 			"scope": [
 				"keyword",
-				"storage.type",
-				"storage.modifier"
+				"storage.modifier",
+				"meta.var.expr"
 			],
 			"settings": {
-				"foreground": "#f0eed7"
+				"foreground": "#f7f7f7", // f0eed7
 			}
 		},
 		{
 			"name": "Operator, Misc",
 			"scope": [
 				"keyword.control",
-				"constant.other.color",
-				"punctuation",
-				"meta.tag",
-				"punctuation.definition.tag",
-				"punctuation.separator.inheritance.php",
-				"punctuation.definition.tag.html",
-				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html",
-				"punctuation.section.embedded",
-				"keyword.other.template",
-				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#f0eed7" //#f0eed7
+				"foreground": "#C792EA" //#f0eed7
 			}
 		},
 		{
@@ -208,16 +192,7 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#5decd9",
-			}
-		},
-		{
-			"name": "Block Level Variables",
-			"scope": [
-				"meta.block variable.other"
-			],
-			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#62daca",
 			}
 		},
 		{
@@ -251,6 +226,8 @@
 			"scope": [
 				"string",
 				"punctuation.definition.string.end",
+				"punctuation.definition.string.template.begin",
+				"punctuation.definition.string.template.end",
 				"punctuation.definition.string.begin",
 				"constant.other.symbol",
 				"constant.other.key",
@@ -266,12 +243,12 @@
 		{
 			"name": "Class, Support",
 			"scope": [
-				"entity.name",
+				// "entity.name",
 				"support.type",
 				"support.class",
-				"support.orther.namespace.use.php",
-				"meta.use.php",
-				"support.other.namespace.php",
+				"support.orther.namespace.use",
+				"meta.use",
+				"support.other.namespace",
 				"markup.changed.git_gutter",
 				"support.type.sys-types"
 			],
@@ -285,7 +262,7 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"foreground": "#C792EA"
 			}
 		},
 		{
@@ -349,7 +326,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#569CD6" //#5BBDFF
 			}
 		},
 		{
@@ -748,9 +725,38 @@
 				 "punctuation.definition.parameters.end",
 				  "text.html.derivative","metax.children", "punctuation.separator.key-value",
 				   "punctuation.separator.comma", "punctuation.accessor", "punctuation.separator.parameter",
-				    "punctuation.terminator.statement", "source", "meta.brace.round", "meta.var.expr"],
+				    "punctuation.terminator.statement", "meta.brace.round", "meta.var.expr"],
 			"settings": {
 				"foreground": "#FFFFFF",
+			}
+		},
+		{
+			"name": "",
+			"scope": ["keyword.control.import"], //  "variable.other.readwrite", "entity.name.type"
+			"settings": {
+				"foreground": "#C792EA",
+			}
+		},
+		{
+			"name": "",
+			"scope": ["variable.other.readwrite", "entity.other.attribute-name"], //  "variable.other.readwrite", "entity.name.type"
+			"settings": {
+				"foreground": "#9CDCFE",
+			}
+		},
+		{
+			"name": "",
+			"scope": ["punctuation.section.embedded.begin", "punctuation.section.embedded.end", "storage.type", "storage.modifier",
+			"punctuation.definition.template-expression.end", "punctuation.definition.template-expression.begin", "keyword.operator.expression"],
+			"settings": {
+				"foreground": "#569CD6",
+			}
+		},
+		{
+			"name": "",
+			"scope": ["entity.name.namespace", "entity.name.type"],
+			"settings": {
+				"foreground": "#FFCB6B",
 			}
 		}
 	]
